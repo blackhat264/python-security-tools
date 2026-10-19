@@ -1,20 +1,39 @@
+<div align="center">
+
 # 🐍 Python Security Tools
 
-Practical Python tools for recon, analysis and automation.
+**Offensive & defensive helper tools written in pure Python**
+
+</div>
+
+---
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `port_scanner.py` | Simple multi-threaded port scanner |
-| `hash_identifier.py` | Identify common hash types |
-| `log_analyzer.py` | Basic auth.log / failed login analyzer |
+| Tool | Type | Description |
+|------|------|-------------|
+| `port_scanner.py` | Offensive | Multi-threaded TCP port scanner |
+| `hash_identifier.py` | Offensive | Identify common hash types |
+| `banner_grabber.py` | Offensive | Simple service banner grabber |
+| `log_analyzer.py` | Defensive | Basic failed login / auth.log analyzer |
 
-## Usage
+## Usage Examples
 
 ```bash
-python port_scanner.py 192.168.1.1
+# Port scan
+python port_scanner.py 192.168.1.10
+
+# Identify hash
+python hash_identifier.py 5f4dcc3b5aa765d61d8327deb882cf99
+
+# Banner grab
+python banner_grabber.py 192.168.1.10 22
 ```
+
+## Disclaimer
+
+These tools are intended for **authorized testing and educational purposes only**.  
+Do not use them against systems you do not own or have explicit permission to test.
 
 ## License
 
